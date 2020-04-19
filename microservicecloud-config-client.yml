@@ -1,0 +1,29 @@
+spring:
+  profiles:
+    active: dev
+
+server:
+  port: 8210
+
+---
+spring:
+  profiles: dev
+  application:
+    name: config-client
+eureka:
+  client:
+    service-url:
+      defaultZone:
+---
+
+server:
+  port: 8202
+
+spring:
+  profiles: dev
+  application:
+    name: config-client
+eureka:
+  client:
+    service-url:
+      defaultZone:
