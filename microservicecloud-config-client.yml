@@ -13,17 +13,17 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone:
+      defaultZone: http://dev
 ---
 
 server:
   port: 8202
 
 spring:
-  profiles: dev
+  profiles: test
   application:
     name: config-client
 eureka:
   client:
     service-url:
-      defaultZone:
+      defaultZone: http://test
